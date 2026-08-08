@@ -1,0 +1,28 @@
+<!-- 登录框实现 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>用户登录</title>
+  <style>
+    body { font-family: sans-serif; background: #f5f5f5; }
+    .login-box { width: 320px; margin: 100px auto; padding: 24px;
+                 background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+    .login-box h2 { text-align: center; }
+    .login-box label { display: block; margin: 12px 0 4px; }
+    .login-box input { width: 100%; padding: 8px; box-sizing: border-box; }
+    .login-box button { width: 100%; margin-top: 16px; padding: 10px;
+                        background: #1890ff; color: #fff; border: none; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <form class="login-box" action="/login" method="post">
+    <h2>用户登录</h2>
+    <label for="username">用户名</label>
+    <input id="username" name="username" type="text" required>
+    <label for="password">密码</label>
+    <input id="password" name="password" type="password" required>
+    <button type="submit">登录</button>
+  </form>
+</body>
+</html>
